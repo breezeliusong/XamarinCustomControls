@@ -98,6 +98,7 @@
     </Compile>
     <Compile Include="ConcatImageExtensionConverter.cs" />
     <Compile Include="CustomControlRenderer\CustomCellRenderer.cs" />
+    <Compile Include="CustomControlRenderer\CustomEntryRenderer.cs" />
     <Compile Include="CustomControlRenderer\CustomListViewRenderer.cs" />
     <Compile Include="CustomControlRenderer\CustomViewRenderer.cs" />
     <Compile Include="MainPage.xaml.cs">

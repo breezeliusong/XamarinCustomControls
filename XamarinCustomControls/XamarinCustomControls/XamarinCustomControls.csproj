@@ -39,6 +39,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomControl\CustomCell.cs" />
+    <Compile Include="CustomControl\CustomEntry.cs" />
     <Compile Include="CustomControl\CustomListView.cs" />
     <Compile Include="CustomControl\CustomView.cs" />
     <Compile Include="DataModel\DataSource.cs" />

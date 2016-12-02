@@ -7,7 +7,7 @@
 
     <StackLayout >
 
-        <Label Text="Welcome to Xamarin Forms!" 
+        <custom:CustomEntry Text="Welcome to Xamarin Forms!" 
            HorizontalOptions="Center" BackgroundColor="Pink"/>
         <custom:CustomListView ItemSelected="OnItemSelect" x:Name="MyListView0" VerticalOptions="FillAndExpand">
             <!--<custom:CustomListView.ItemTemplate>
