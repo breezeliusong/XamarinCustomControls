@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinCustomControls"
+             xmlns:custom="clr-namespace:XamarinCustomControls.CustomControl"
+             x:Class="XamarinCustomControls.MainPage">
+
+    <StackLayout >
+
+        <Label Text="Welcome to Xamarin Forms!" 
+           HorizontalOptions="Center" BackgroundColor="Pink"/>
+        <custom:CustomListView ItemSelected="OnItemSelect" x:Name="MyListView0" VerticalOptions="FillAndExpand">
+            <!--<custom:CustomListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Category}" DetailColor="Blue"   Height="100"/>
+                        <Label Text="{Binding Category}" />
+                </DataTemplate>
+            </custom:CustomListView.ItemTemplate>-->-->
+        </custom:CustomListView>
+        <custom:CustomView _Text="hello custom view" BackgroundColor="Pink" />
+        <ListView ItemSelected="OnItemSelect_" x:Name="MyListView1" VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <custom:CustomCell Key="{Binding Name}" Category="{Binding Category}" ImageFilename="{Binding ImageFilename}"></custom:CustomCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
+</ContentPage>
